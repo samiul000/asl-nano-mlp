@@ -1,0 +1,35 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated model weights
+model.pt
+train_metrics.json
+eval_report.json
+
+# Downloaded models
+models/hand_landmarker.task
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Organized data for article writing
+docs/research.md
+docs/research.d
+
+# Specific output files to ignore
+output/confusion_matrix.png
+output/int8_confusion_matrix.png
+output/int16_confusion_matrix.png
+output/stream_stats.png
+output/stream_*.csv
+output/model_comparison.csv
+output/model_comparison_all.csv
+output/quantized_eval.json
+output/neuron_table.csv
+
+# Plot and comparison scripts
+plot_*.py
+compare_*.py
