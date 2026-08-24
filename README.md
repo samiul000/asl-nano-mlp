@@ -1,8 +1,13 @@
-# ASL Alphabet Recognition — MediaPipe → Arduino Nano
+<div align="center">
+<h1>ASL Alphabet Recognition : MediaPipe → Arduino Nano</h1>
 
-Real-time sign language alphabet recognition using a webcam for
+<h4>
+  Real-time sign language alphabet recognition using a webcam for
 hand landmark extraction and an Arduino Nano (ATmega328P) for
 layer-streaming MLP inference.
+</h4>
+
+</div>
 
 ## Hardware
 
