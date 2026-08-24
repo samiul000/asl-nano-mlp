@@ -1,12 +1,12 @@
 <div align="center">
-<h1>ASL Alphabet Recognition : MediaPipe → Arduino Nano</h1>
+  <img src = "assets/ml_nano_logo.png" width = "40%" height="40%">
+  <h1>ASL Alphabet Recognition : MediaPipe → Arduino Nano</h1>
 
-<h4>
-  Real-time sign language alphabet recognition using a webcam for
-hand landmark extraction and an Arduino Nano (ATmega328P) for
-layer-streaming MLP inference.
-</h4>
-
+  <h4>
+    Real-time sign language alphabet recognition using a webcam for
+  hand landmark extraction and an Arduino Nano (ATmega328P) for
+  layer-streaming MLP inference.
+  </h4>
 </div>
 
 ## Hardware
