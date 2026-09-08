@@ -99,33 +99,41 @@ export_int8.py           int8 quantize → model_int8.h
 export_float.py          float32 → model_float.h
 evaluate.py              Classification metrics
 stream.py                Realtime serial sender (--variant float|int16|int8)
-compare_models.py        Float vs INT16 vs INT8 comparison
-plot_stream.py           Latency/RAM plots from stream logs
-plot_confidence.py       3-way confidence distribution
-plot_pca_ac.py           PCA visualization of A vs C overlap
-plot_confusion_all.py    3-side-by-side confusion matrices
 firmware/
   sign_language_nano/          INT16 Arduino firmware
   sign_language_nano_int8/     INT8 Arduino firmware
   sign_language_nano_float/    Float32 Arduino firmware
 models/
   hand_landmarker.task         MediaPipe hand model
-output/
-  confusion_matrix_all.png     Combined confusion matrices
-  confidence_comparison.png    3-way confidence distribution
-  pca_a_vs_c.png              PCA A vs C overlap
-  stream_log*.csv             Stream logs (float/int16/int8)
-  stream_log*_stats.png       Latency/RAM plots
-  model_comparison_all.csv     Full comparison table
 dataset/
   raw/                         Per-class raw CSVs
   train.csv, val.csv, test.csv
+output/                        Measured datasets (A–J) + manuscript figures
+  dataset_b_ablation.csv       Streaming vs conventional ablation
+  dataset_c_scaling.csv        5 topologies, 5-seed mean±SD
+  dataset_c_multiseed.csv      25 raw training runs
+  dataset_d_timing*.csv        Per-layer timing probes (7 variants)
+  dataset_e_memory.csv         Flash/SRAM per variant
+  dataset_f_*.csv              Confusion matrices + raw predictions
+  dataset_g_confidence.csv     Confidence scores per variant
+  dataset_h_hidden_activations.csv  48-dim hidden activations
+  dataset_i_latency.csv        Full pipeline latency breakdown
+  dataset_j_pareto.csv         Accuracy/latency/memory Pareto table
+  timing_probe_raw*.csv        Raw serial timing logs
+  stream_log*.csv              Stream logs (float/int16/int8)
+  figures/
+    fig2_streaming_diagram.png … fig11_memory_map.png
+experiments/                   Timing probes, checkpoints, generators
+  firmware/                    Per-variant timing + conventional sketches
+  models/                      30 training checkpoints (5 seeds × 5 archs)
+  scripts/                     Figure/data/docx generator scripts
 docs/
   architecture.md             MLP design, quantization, memory
   collector.md                Data collection workflow
   hardware.md                 Wiring, OLED layout, Nano specs
   serial_protocol.md          Packet format, checksum, parsing
   training.md                 Train, export, compile, upload
+Graphical_Abstract.pdf         6-panel graphical abstract (300 dpi + vector)
 ```
 
 ## License
