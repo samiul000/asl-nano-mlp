@@ -1,0 +1,14 @@
+source,n,mean_confidence_pct,std_confidence_pct
+stream_float,1314,92.88,12.96
+stream_int16,1514,93.91,12.17
+stream_int8,1364,90.23,15.00
+test_set_float,1507,92.12,15.63
+
+confidence_bucket_pct,n,accuracy
+0-20,0,
+20-40,12,0.5833
+40-60,118,0.5339
+60-80,112,0.5625
+80-90,74,0.7027
+90-95,46,0.7391
+95-100,1145,0.9878

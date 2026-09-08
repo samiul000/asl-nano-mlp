@@ -1,0 +1,58 @@
+variant,metric,bytes,source
+float,flash_total,27326,arduino-cli compile sign_language_nano_float
+float,global_sram_total,1222,arduino-cli compile (all static allocations incl. libraries)
+float,activation_sram,200,.ino constants
+float,serial_buffer,240,.ino constants
+float,stack_headroom_min,826,min free_ram over stream log
+float,peak_sram_used,1222,2048 - min free_ram
+float,free_sram,826,min free_ram over stream log
+int16,flash_total,23778,arduino-cli compile sign_language_nano
+int16,global_sram_total,1098,arduino-cli compile (all static allocations incl. libraries)
+int16,activation_sram,200,.ino constants
+int16,serial_buffer,240,.ino constants
+int16,stack_headroom_min,950,min free_ram over stream log
+int16,peak_sram_used,1098,2048 - min free_ram
+int16,free_sram,950,min free_ram over stream log
+int8,flash_total,21884,arduino-cli compile sign_language_nano_int8
+int8,global_sram_total,1118,arduino-cli compile (all static allocations incl. libraries)
+int8,activation_sram,200,.ino constants
+int8,serial_buffer,240,.ino constants
+int8,stack_headroom_min,930,min free_ram over stream log
+int8,peak_sram_used,1118,2048 - min free_ram
+int8,free_sram,930,min free_ram over stream log
+small1,flash_total,8334,arduino-cli compile arch_small1_timing
+small1,global_sram_total,662,arduino-cli compile (all static allocations incl. libraries)
+small1,activation_sram,200,.ino constants
+small1,serial_buffer,240,.ino constants
+small1,free_sram_probe_min,1370,min free_ram in timing_probe_raw_arch_small1_timing.csv
+small1,peak_sram_used,678,2048 - probe min free_ram
+small1,stack_peak_measured,97,stack painting (deepest sentinel overwritten)
+small2,flash_total,9464,arduino-cli compile arch_small2_timing
+small2,global_sram_total,702,arduino-cli compile (all static allocations incl. libraries)
+small2,activation_sram,200,.ino constants
+small2,serial_buffer,240,.ino constants
+small2,free_sram_probe_min,1330,min free_ram in timing_probe_raw_arch_small2_timing.csv
+small2,peak_sram_used,718,2048 - probe min free_ram
+small2,stack_peak_measured,97,stack painting (deepest sentinel overwritten)
+large1,flash_total,13616,arduino-cli compile arch_large1_timing
+large1,global_sram_total,822,arduino-cli compile (all static allocations incl. libraries)
+large1,activation_sram,200,.ino constants
+large1,serial_buffer,240,.ino constants
+large1,free_sram_probe_min,1210,min free_ram in timing_probe_raw_arch_large1_timing.csv
+large1,peak_sram_used,838,2048 - probe min free_ram
+large1,stack_peak_measured,97,stack painting (deepest sentinel overwritten)
+large2,flash_total,17024,arduino-cli compile arch_large2_timing
+large2,global_sram_total,902,arduino-cli compile (all static allocations incl. libraries)
+large2,activation_sram,200,.ino constants
+large2,serial_buffer,240,.ino constants
+large2,free_sram_probe_min,1130,min free_ram in timing_probe_raw_arch_large2_timing.csv
+large2,peak_sram_used,918,2048 - probe min free_ram
+large2,stack_peak_measured,97,stack painting (deepest sentinel overwritten)
+current_float_probe,flash_total,14268,arduino-cli compile current_float_timing
+current_float_probe,global_sram_total,838,arduino-cli compile (all static allocations incl. libraries)
+current_float_probe,activation_sram,200,.ino constants
+current_float_probe,serial_buffer,240,.ino constants
+current_int8_probe,flash_total,8788,arduino-cli compile current_int8_timing
+current_int8_probe,global_sram_total,742,arduino-cli compile (all static allocations incl. libraries)
+current_int8_probe,activation_sram,200,.ino constants
+current_int8_probe,serial_buffer,240,.ino constants

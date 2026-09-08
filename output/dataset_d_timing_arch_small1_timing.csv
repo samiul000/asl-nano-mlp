@@ -1,0 +1,6 @@
+stage,time_us,source
+Layer 1,3632.0,"measured (timing firmware, median of n=300)"
+Layer 2,892.0,measured
+Output,352.0,measured
+Softmax,1752.0,measured
+Total,4880.0,measured

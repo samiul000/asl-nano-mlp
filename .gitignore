@@ -5,6 +5,8 @@ __pycache__/
 
 # Generated model weights
 model.pt
+experiments/models/
+experiments/scripts/
 train_metrics.json
 eval_report.json
 
@@ -20,10 +22,12 @@ docs/research.md
 docs/research.d
 
 # Specific output files to ignore
-output/confusion_matrix.png
-output/int8_confusion_matrix.png
-output/int16_confusion_matrix.png
-output/stream_stats.png
+output/*.png
+output/figures/accuracy_*.png
+output/figures/architecture_dataflow.png
+output/figures/confusion_matrices.png
+output/figures/pipeline_bottleneck.png
+output/figures/stack_usage.png
 output/stream_*.csv
 output/model_comparison.csv
 output/model_comparison_all.csv
@@ -33,3 +37,10 @@ output/neuron_table.csv
 # Plot and comparison scripts
 plot_*.py
 compare_*.py
+
+# Extras
+DATA_CHECKLIST.md
+DATA_PLAN.md
+NEW_DATA_RESULTS.md
+TODO.txt
+Graphical_Abstract.png

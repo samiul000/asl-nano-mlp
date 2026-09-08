@@ -1,0 +1,7 @@
+variant,scheme,total_infer_us,weight_sram_needed_bytes,feasible_on_nano,source
+conventional (weights in SRAM),,1344,no - compiles with only 42 B left for locals+stack; board crashes on boot (measured),arch_small1_conventional flash + probe attempt 2026-08-23
+streamed (PROGMEM),4880.00,0,yes,measured (timing firmware median n=300)
+conventional small2,,2016,no - compiler rejects: static SRAM 2718 B > 2048 B,arduino-cli compile arch_small2_conventional
+conventional current,,2688,no - compiler rejects: static SRAM 3430 B > 2048 B,arduino-cli compile arch_current_conventional
+conventional large1,,4704,no - compiler rejects: static SRAM 4854 B > 2048 B,arduino-cli compile arch_large1_conventional
+conventional large2,,6400,no - compiler rejects: static SRAM 6278 B > 2048 B,arduino-cli compile arch_large2_conventional
