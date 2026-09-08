@@ -1,11 +1,11 @@
 <div align="center">
   <img src = "assets/ml_nano_logo.png" width = "40%" height="40%">
-  <h1>ASL Alphabet Recognition : MediaPipe → Arduino Nano</h1>
+  <h1>Design-Space Characterization of Layer-Streamed Neural Network Inference on the ATmega328P for Resource-Constrained ASL Landmark Classification</h1>
 
   <h4>
-    Real-time sign language alphabet recognition using a webcam for
-  hand landmark extraction and an Arduino Nano (ATmega328P) for
-  layer-streaming MLP inference.
+    Resource-aware layer-streamed MLP inference on an Arduino Nano (ATmega328P)
+    for ASL hand-landmark classification, with a controlled design-space study
+    across weight precision, topology, and five-seed replication.
   </h4>
 </div>
 
